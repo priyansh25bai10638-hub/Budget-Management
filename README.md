@@ -1,110 +1,99 @@
-# Budget-Management
-SmartBudget is a Java-based application designed to manage income, expenses, and monthly budgets. It helps users track spending, monitor their remaining budget, and identify when their budget is exceeded. The system also generates simple financial reports to provide a clear overview of the user's financial status.
 # SmartBudget – Personal Budget Management System
 
-## 1. Project Overview
+## Project Overview
 
-SmartBudget is a simple Java-based Personal Budget Management System. It helps users record their income and expenses, set a monthly budget, monitor spending, and view their financial status through a console-based menu.
+SmartBudget is a Java-based Personal Budget Management System designed to help users manage their income, expenses, and monthly budgets.
 
-## 2. Features
+The application provides a simple console-based interface where users can add income, record expenses, categorize their spending, set a monthly budget, view all recorded expenses, generate a financial report, and check their budget status.
 
-* Add income with an income source
-* Add expenses with name, category, and amount
-* Set a monthly budget
-* View all recorded expenses
-* Calculate total income and expenses
-* Calculate current balance
-* Check remaining budget
-* Display budget usage percentage
-* Show warning when the budget is exceeded
-* Input validation for income, expenses, and budget amounts
-* Generate a financial report
+The project is designed as a practical Java application that demonstrates the use of fundamental programming concepts while solving a real-world personal finance management problem.
 
-## 3. Technologies / Tools Used
+---
 
-* **Programming Language:** Java
-* **IDE:** Visual Studio Code
-* **Data Structure:** ArrayList
-* **JDK:** Java Development Kit (JDK 8 or above)
-* **Version Control:** Git and GitHub
+## Features
 
-## 4. Project Structure
+### 1. Add Income
+
+Users can add income by entering:
+
+- Income source
+- Income amount
+
+The system adds the valid amount to the total income.
+
+### 2. Add Expense
+
+Users can record an expense by entering:
+
+- Expense name
+- Expense category
+- Expense amount
+
+The expense is stored temporarily and added to the total expenses.
+
+### 3. Set Monthly Budget
+
+Users can define a monthly spending budget.
+
+The budget is used by the application to monitor spending and calculate the remaining available budget.
+
+### 4. View All Expenses
+
+Users can view all expenses recorded during the current program session.
+
+Each expense contains:
+
+- Expense name
+- Expense category
+- Expense amount
+
+### 5. Financial Report
+
+The application generates a financial report containing:
+
+- Total income
+- Total expenses
+- Current balance
+- Monthly budget
+- Remaining budget
+
+### 6. Check Budget Status
+
+The system calculates the percentage of the budget that has been used.
+
+It also informs the user whether the spending is within the budget or has exceeded the defined monthly budget.
+
+### 7. Budget Alerts
+
+The application provides warnings when:
+
+- 80% or more of the monthly budget has been used.
+- Total expenses exceed the monthly budget.
+
+### 8. Input Validation
+
+The system validates monetary inputs and prevents invalid values such as zero or negative amounts for income, expenses, and budgets.
+
+---
+
+## Technologies Used
+
+| Technology / Tool | Purpose |
+|---|---|
+| Java | Main programming language |
+| JDK 8+ | Compilation and execution |
+| Visual Studio Code | Development environment |
+| ArrayList | Temporary storage of expense data |
+| Git | Version control |
+| GitHub | Source code repository |
+
+---
+
+## Project Structure
 
 ```text
 SmartBudget/
 │
-└── SmartBudget.java
-```
-
-The complete project is implemented in a single Java file.
-
-## 5. Installation and Running
-
-### Step 1: Install Java
-
-Install JDK 8 or a newer version on your computer.
-
-### Step 2: Open the Project
-
-Open the `SmartBudget` folder in Visual Studio Code.
-
-### Step 3: Compile the Program
-
-Open the VS Code terminal and run:
-
-```bash
-javac SmartBudget.java
-```
-
-### Step 4: Run the Program
-
-```bash
-java SmartBudget
-```
-
-## 6. How to Use
-
-After starting the program, the following menu is displayed:
-
-```text
-1. Add Income
-2. Add Expense
-3. Set Monthly Budget
-4. View All Expenses
-5. View Financial Report
-6. Check Budget Status
-7. Exit
-```
-
-Select the required option by entering its number.
-
-## 7. Testing
-
-The following test cases can be used to test the application:
-
-| Test Case             | Expected Result                                     |
-| --------------------- | --------------------------------------------------- |
-| Add valid income      | Income is added successfully                        |
-| Add valid expense     | Expense is recorded                                 |
-| Enter negative amount | Error message is displayed                          |
-| Set monthly budget    | Budget is saved                                     |
-| View expenses         | All recorded expenses are displayed                 |
-| Generate report       | Income, expenses, balance, and budget are displayed |
-| Exceed budget         | Budget exceeded warning is displayed                |
-| No expenses           | System displays that no expenses are recorded       |
-
-## 8. Screenshots
-
-The following screenshots can be added to demonstrate the working project:
-
-* Main menu
-* Adding income
-* Adding an expense
-* Setting monthly budget
-* Expense list
-* Financial report
-* Budget status and warning
-
-## 9. Project Objective
-
-The objective of SmartBudget is to provide a simple way to manage personal finances while demonstrating Java concepts such as variables, methods, loops, conditional statements, ArrayList collections, user input, and input validation.
+├── SmartBudget.java
+├── README.md
+└── statement.md
